@@ -1,60 +1,207 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-
+body {
+	font-family: "Roboto", sans-serif;
+	padding-top: 44px;
+}
 .container {
-  max-width: 1200px;
-  margin: auto;
+	max-width: 1200px;
+	margin: auto;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
 }
 
-.search-input {
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
-  border-radius: 2px;
-  height: 40px;
-  width: 690px;
-  font-size: 16px;
-  line-height: 24px;
-  background-image: url(../img/home.svg);
-  background-repeat: no-repeat;
-  background-position: left 11px center;
-  padding-left: 35px;
+.input {
+	background: #ffffff;
+	border: 1px solid #d9d9d9;
+	border-radius: 2px;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px;
+	background-repeat: no-repeat;
+	background-position: left 11px center;
+	padding-left: 35px;
 }
-.buttons{
-display: flex;
-align-items: center;
 
+.input-address {
+	width: 690px;
+	background-image: url(../img/home.svg);
+}
 
+.input-search {
+	background-image: url(../img/search.svg);
+	width: 300px;
+}
+.buttons {
+	display: flex;
+	align-items: center;
 }
 .button {
-  display: flex;
-  align-items: center;
-  padding: 8px 16px;
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
-  border-radius: 2px;
-  color: #595959;
+	display: flex;
+	align-items: center;
+	padding: 8px 16px;
+	background: #ffffff;
+	border: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+	border-radius: 2px;
+	color: #595959;
 }
 
 .button-primary {
-  background-color: #1890ff;
-  border: 1px solid #1890ff;
-  color: #fff;
-  margin-right: 10px;
+	background-color: #1890ff;
+	border: 1px solid #1890ff;
+	color: #fff;
+	margin-right: 10px;
 }
 .button-icon {
-  margin-right: 6px;
-  vertical-align: middle;
+	margin-right: 6px;
+}
+.promo {
+	box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+	background: #fff1b8 url(../img/promo-image.png) no-repeat top -100px right -247px/924px;
+	border-radius: 10px;
+	padding: 68px 70px;
+	margin-bottom: 56px;
 }
 
-.button-text {
-  vertical-align: middle;
+.promo-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #302c34;
+	max-width: 538px;
 }
+
+.main {
+	background: linear-gradient(
+		180deg,
+		rgba(245, 245, 245, 0) 1.04%,
+		#f5f5f5 100%
+	);
+}
+
+.section-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+.section-title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+	margin: 0;
+}
+
+.cards {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.card {
+	background: #ffffff;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+	border-radius: 7px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.card-image {
+	width: 384px;
+	height: 250px;
+	object-fit: cover;
+}
+
+.card-text {
+	padding-top: 20px;
+	padding-bottom: 35px;
+	padding-left: 23px;
+	padding-right: 23px;
+}
+.card-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.card-title {
+	margin: 0;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.card-tag {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 20px;
+	color: #ffffff;
+	background: #262626;
+	border-radius: 2px;
+	padding: 1px 8px;
+}
+.card-info {
+	display: flex;
+	align-items: center;
+}
+.rating {
+	margin-right: 26px;
+	color: #ffc107;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.price,
+.category {
+	color: #8c8c8c;
+	font-size: 18px;
+	line-height: 32px;
+}
+.price {
+	margin-right: 10px;
+}
+
+.price::after {
+	content: "";
+	width: 5px;
+	height: 5px;
+	background: #8c8c8c;
+	display: inline-block;
+	border-radius: 50%;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.footer {
+	padding: 60px 0;
+}
+.footer-block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-link {
+	display: inline-block;
+	color: #595959;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-decoration: none;
+}
+.footer-link:not(:last-child){
+	margin-right: 15px;
