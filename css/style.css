@@ -37,6 +37,7 @@ body {
 .input-search {
 	background-image: url(../img/search.svg);
 	width: 300px;
+	margin-left: auto;
 }
 .buttons {
 	display: flex;
@@ -63,6 +64,11 @@ body {
 .button-icon {
 	margin-right: 6px;
 }
+
+.button-card-text {
+	margin-right: 10px;
+}
+
 .promo {
 	box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
 	background: #fff1b8 url(../img/promo-image.png) no-repeat top -100px right -247px/924px;
@@ -91,7 +97,7 @@ body {
 .section-heading {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+
 	margin-bottom: 44px;
 }
 .section-title {
@@ -101,6 +107,7 @@ body {
 	line-height: 42px;
 	color: #000000;
 	margin: 0;
+	margin-right: 30px;
 }
 
 .cards {
@@ -117,6 +124,7 @@ body {
 	overflow: hidden;
 	margin-bottom: 30px;
 	flex-basis: 31%;
+	text-decoration: none;
 }
 
 .card-image {
@@ -143,6 +151,9 @@ body {
 	font-size: 24px;
 	line-height: 32px;
 }
+.card-title-reg {
+	font-weight: 400;
+}
 
 .card-tag {
 	font-style: normal;
@@ -159,6 +170,20 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 }
+
+.card-buttons {
+	display: flex;
+	align-items: center;
+	margin-top: 24px;
+}
+
+.card-price-bold {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 32px;
+	margin-left: 30px;
+}
+
 .rating {
 	margin-right: 26px;
 	color: #ffc107;
@@ -176,6 +201,12 @@ body {
 .price {
 	margin-right: 10px;
 }
+.ingredients {
+	color: #8c8c8c;
+	font-style: 18px;
+	line-height: 21px;
+}
+
 .category {
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -272,7 +303,7 @@ body {
 	.card-info {
 		flex-wrap: wrap;
 	}
-	.rating {
+	.card .rating {
 		flex-basis: 100%;
 	}
 	.card-title {
